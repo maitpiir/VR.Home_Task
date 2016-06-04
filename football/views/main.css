@@ -1,0 +1,94 @@
+body {
+	margin: 0px;
+	background: white;
+	color: #444;
+	text-align: center;
+}
+
+input[type=button], input[type=submit], input[type=text] {
+	background: white;
+	border: 1px solid #444;
+	border-radius: 0.5em;
+	margin: 0px;
+	padding: 0.5em;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=text]:hover {
+	background-color: #55aacc;
+	color: white;
+}
+
+h1, h2, h3 {
+	color: #55aacc;
+	text-transform: uppercase;
+}
+
+a, a:active, a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+td, th {
+	border-bottom: 1px solid #ccc;
+	padding: 0.5em;
+	text-align: center;
+}
+
+th {
+	border-bottom: 1px solid #444;
+}
+
+th {
+	text-transform: uppercase;
+}
+
+ul {
+	background-color: #55aacc;
+	color: white;
+}
+
+ul a:active, ul a:visited {
+	color: white;
+}
+
+ul li {
+	display: inline;
+	padding: 0px 1em;
+}
+
+div#overlay {
+	background: rgba(255,255,255,0.9);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+div#overlay-container {
+	margin: 10px;
+	position: relative;
+}
+
+div#overlay[status=open] {
+	visibility: visible;
+}
+
+div#overlay[status=closed] {
+	visibility: hidden;
+}
+
+div#overlay div#overlay-container div#close {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+div#overlay-error {
+	color: #a44;
+}
